@@ -58,6 +58,11 @@
         color: #333;
     }
 
+    .podcast-section {
+        display: flex;
+        flex-flow: column;
+    }
+
     .podcast-section h2 {
         font-size: 1.5em;
         font-weight: bold;
@@ -91,19 +96,29 @@
     } */
 
     @media (max-width: 768px) {
-        .container{
+        .container {
             display: block;
         }
 
-        .left-panel{
+        .left-panel {
             position: relative !important;
         }
-        .right-panel-titles{
+
+        .right-panel-titles {
             display: block !important;
         }
 
         #podcast-text-container {
             display: block !important;
+            order: 2;
+        }
+
+        .slider {
+            order: 1 !important;
+        }
+
+        .podcast-section {
+            display: flex;
         }
     }
 
@@ -123,6 +138,7 @@
         margin: auto;
         overflow: hidden;
         border-radius: 8px;
+        order: 2;
     }
 
     .slides {
@@ -193,7 +209,7 @@
 
     hr {
         background: rgba(0, 0, 0, 0.6);
-        border: 1 ;
+        border: 1;
         height: 1px;
         display: block;
         width: 100%;
@@ -203,15 +219,15 @@
         gap: 30%;
     }
 
-    .left-panel{
+    .left-panel {
         position: sticky;
         flex: 1;
         top: 0;
         height: 100vh;
     }
 
-    a{
-        text-decoration: none  ;
+    a {
+        text-decoration: none;
         color: black;
     }
 
@@ -246,9 +262,13 @@
             <img src="https://freight.cargo.site/w/750/h/1000/i/Y2011010142676284591086047155187/1f94de36-b467-471c-947d-b4fa06e2424b.JPG"
                 alt="Fondo Nawers Studio" class="background-image">
             <div class="social-links">
-                <a class="social-media-link" href="https://www.instagram.com/nawersstudio_/" target="_blank">Instagram,</a>
-                <a class="social-media-link"  href="https://www.youtube.com/@ElSentio.podcast" target="_blank">Youtube,</a>
-                <a class="social-media-link"  href="https://open.spotify.com/show/1X7KLVjBTH3ZRouFEE8KLx?si=7ae4f616bd8e4547&nd=1&dlsi=16ab3c29d6c04276" target="_blank">Spotify</a>
+                <a class="social-media-link" href="https://www.instagram.com/nawersstudio_/"
+                    target="_blank">Instagram,</a>
+                <a class="social-media-link" href="https://www.youtube.com/@ElSentio.podcast"
+                    target="_blank">Youtube,</a>
+                <a class="social-media-link"
+                    href="https://open.spotify.com/show/1X7KLVjBTH3ZRouFEE8KLx?si=7ae4f616bd8e4547&nd=1&dlsi=16ab3c29d6c04276"
+                    target="_blank">Spotify</a>
             </div>
         </div>
 
@@ -263,8 +283,11 @@
                     <a href="https://www.youtube.com/@ElSentio.podcast" target="_blank">
                         <h2>El Sentío </h2>
                         <h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32" width="32" part="svg" draggable="true">
-                            <path part="base-color" fill="currentColor" d="M 4.84 9.18 C 4.84 14.55 6.97 17.08 12.36 17.08 L 20.40 17.08 L 23.54 16.99 L 21.00 19.30 L 16.48 23.84 L 17.93 25.27 L 27.16 16.05 L 17.93 6.82 L 16.47 8.27 L 21.00 12.78 L 23.55 15.11 L 20.40 15.01 L 12.47 15.01 C 8.27 15.01 6.87 13.20 6.87 9.07 L 6.87 6.73 L 4.86 6.73 L 4.84 9.18 Z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32"
+                                width="32" part="svg" draggable="true">
+                                <path part="base-color" fill="currentColor"
+                                    d="M 4.84 9.18 C 4.84 14.55 6.97 17.08 12.36 17.08 L 20.40 17.08 L 23.54 16.99 L 21.00 19.30 L 16.48 23.84 L 17.93 25.27 L 27.16 16.05 L 17.93 6.82 L 16.47 8.27 L 21.00 12.78 L 23.55 15.11 L 20.40 15.01 L 12.47 15.01 C 8.27 15.01 6.87 13.20 6.87 9.07 L 6.87 6.73 L 4.86 6.73 L 4.84 9.18 Z">
+                                </path>
                             </svg>Temporada_01
                         </h2>
                     </a>
@@ -273,38 +296,36 @@
 
             <hr>
             <section class="podcast-section">
-                <div>
-                    <div id="podcast-text-container" class="flex gap">
+                <div id="podcast-text-container" class="flex gap">
+                    <div>
+                        <div style="height: 32px;"></div>
                         <div>
-                            <div style="height: 32px;"></div>
-                            <div>
-                                <p>Cristina Muñoz Lozano</p>
-                                <p>Especializada en branding, packaging y comunicación de marca.</p>
-                                <p>WORK FOR</p>
-                                <p>La Carboná. La Chumbera. Tío Pepe. Osborne. Vinoble. Viver Kombucha. Florenea. Gloria
-                                    Vendimia. La Gloria Taberna. La Yerbabuena.</p>
-                            </div>
+                            <p>Cristina Muñoz Lozano</p>
+                            <p>Especializada en branding, packaging y comunicación de marca.</p>
+                            <p>WORK FOR</p>
+                            <p>La Carboná. La Chumbera. Tío Pepe. Osborne. Vinoble. Viver Kombucha. Florenea. Gloria
+                                Vendimia. La Gloria Taberna. La Yerbabuena.</p>
                         </div>
+                    </div>
+                    <div>
                         <div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32"
-                                    width="32" part="svg" draggable="true">
-                                    <path part="base-color" fill="currentColor"
-                                        d="M 4.93 6.05 C 6.21 4.66 7.90 3.97 9.59 3.97 C 11.27 3.97 12.96 4.66 14.25 6.05 L 16.00 7.96 L 17.74 6.07 C 20.31 3.30 24.51 3.30 27.07 6.07 C 29.64 8.85 29.64 13.30 27.07 16.08 L 16.25 27.80 L 15.98 28.03 L 15.74 27.80 L 4.93 16.07 C 2.36 13.29 2.36 8.83 4.93 6.05 Z">
-                                    </path>
-                                </svg>
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="32"
+                                width="32" part="svg" draggable="true">
+                                <path part="base-color" fill="currentColor"
+                                    d="M 4.93 6.05 C 6.21 4.66 7.90 3.97 9.59 3.97 C 11.27 3.97 12.96 4.66 14.25 6.05 L 16.00 7.96 L 17.74 6.07 C 20.31 3.30 24.51 3.30 27.07 6.07 C 29.64 8.85 29.64 13.30 27.07 16.08 L 16.25 27.80 L 15.98 28.03 L 15.74 27.80 L 4.93 16.07 C 2.36 13.29 2.36 8.83 4.93 6.05 Z">
+                                </path>
+                            </svg>
+                        </div>
 
-                            <div>
-                                <p>Mi trabajo está muy vinculado con la cultura y el tejido artístico de Jerez.</p>
-                                <br>
-                                <p>Prueba de esto es “El sentío” un video podcast en el que charlo con diferentes
-                                    artistas profesionales sobre el desarrollo de la creatividad.</p>
-                                <br>
-                                <p>Colaboro con proyectos de dinamización artística, investigación y divulgativos a
-                                    través
-                                    de asociaciones culturales.</p>
-                            </div>
+                        <div>
+                            <p>Mi trabajo está muy vinculado con la cultura y el tejido artístico de Jerez.</p>
+                            <br>
+                            <p>Prueba de esto es “El sentío” un video podcast en el que charlo con diferentes
+                                artistas profesionales sobre el desarrollo de la creatividad.</p>
+                            <br>
+                            <p>Colaboro con proyectos de dinamización artística, investigación y divulgativos a
+                                través
+                                de asociaciones culturales.</p>
                         </div>
                     </div>
                 </div>
